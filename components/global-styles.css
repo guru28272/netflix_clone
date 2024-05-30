@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+}
+
+/* main-container  */
+.main-container {
+  /* border: 5px solid red; */
+  background-image: linear-gradient(rgba(0, 8, 8, 0.6), rgba(0, 0, 0, 1)),
+    url(../img/main-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* utility */
+.section-input {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btn {
+  width: 200px;
+  background: red;
+  font-size: 1.2rem;
+  padding: 0.75em 1em;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+/* contact */
+.contact__box-list-item {
+  list-style-type: none;
+}
+
+.contact__link {
+  color: #898484;
+}
+
+/* header
+centering the hero section by absolute or using flex,
+inline-flex in language-btn,
+flex in section-input,
+
+*/
+
+/* section's
+leave tha align-items in flex if you want 
+
+ */
+
+/* 
+ scroll disabled,
+ using skew,rotate
+  */

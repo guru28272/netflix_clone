@@ -1,0 +1,29 @@
+/* articles */
+.articles {
+  /* border: 3px solid red; */
+  margin-top: 5rem;
+}
+.articles__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.articles__title {
+  font-size: 2rem;
+}
+
+/* watch */
+.watch__img {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 6%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 94%
+  );
+}

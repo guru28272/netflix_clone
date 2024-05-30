@@ -1,0 +1,142 @@
+/* pre-defined media-queries */
+/* @media (max-width: 1536px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 450px) {
+} */
+
+/* play */
+.play {
+  /* border: 2px solid yellow; */
+  margin-top: 3rem;
+}
+.play__box {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(to right, rgb(63, 7, 33), rgba(42, 16, 66, 1));
+}
+
+.play__box::-webkit-scrollbar {
+  display: none;
+}
+
+.play__box-item {
+  /* border: 1px solid wheat; */
+  width: 100%;
+  flex: 1;
+}
+
+.play__box-title {
+  font-size: 2rem;
+  max-width: 25ch;
+  margin-bottom: 1rem;
+}
+
+.play__content {
+  max-width: 60ch;
+}
+
+.play__img-box {
+  /* border: 1px solid wheat; */
+  flex: 1;
+}
+
+.play__img {
+  /* border: 1px solid wheat; */
+  transform: rotate(0.15turn) skewY(10deg);
+  position: relative;
+  top: 0;
+  right: -270px;
+
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+@media (max-width: 1536px) {
+}
+@media (max-width: 1280px) {
+  .play__box-title {
+    max-width: 40ch;
+    font-size: 1.5rem;
+  }
+
+  .play__content {
+    max-width: 75ch;
+  }
+
+  .play__img {
+    right: -170px;
+  }
+}
+@media (max-width: 1024px) {
+  .play__box {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  /* .play__box-item {
+    border: 1px solid wheat;
+  } */
+
+  .play__img-box {
+    /* border: 1px solid wheat; */
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .play__img {
+    transform: none;
+    width: 300px;
+    height: 100%;
+    position: static;
+    object-position: right bottom;
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+  .play__box {
+    height: 400px;
+  }
+
+  .play__content {
+    line-height: 1.2;
+  }
+  .play__img {
+    width: 100%;
+    object-position: center;
+  }
+}
+@media (max-width: 450px) {
+  .play__img-box {
+    /* border: 1px solid wheat; */
+    min-height: 80px;
+    justify-content: center;
+  }
+
+  .play__img {
+    position: static;
+  }
+}

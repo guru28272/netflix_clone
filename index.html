@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google icon language -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- style-sheets -->
+    <link rel="stylesheet" href="./components/global-styles.css" />
+    <link rel="stylesheet" href="./components/styles/header.css" />
+    <link rel="stylesheet" href="./components/styles/hero.css" />
+    <link rel="stylesheet" href="./components/styles/border.css" />
+    <link rel="stylesheet" href="./components/styles/play.css" />
+    <link rel="stylesheet" href="./components/styles/articles.css" />
+    <link rel="stylesheet" href="./components/styles/frequent.css" />
+    <link rel="stylesheet" href="./components/styles/contact.css" />
+    <link rel="stylesheet" href="./components/styles/footer.css" />
+    <link rel="stylesheet" href="./components/utils.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- header -->
+      <header class="header">
+        <p><img src="./img/logo.svg" alt="" class="header__logo" /></p>
+        <nav class="header__nav">
+          <!-- btn-1 -->
+          <button class="header__btn-1 lang-btn">
+            <!-- lang icon -->
+            <span
+              class="material-symbols-outlined header__btn-1-lang lang-btn-translate"
+            >
+              translate
+            </span>
+            <span class="header__eng"> english </span>
+            <!-- down arrow icon -->
+            <span class="header__btn-1-arrow lang-btn-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </span>
+          </button>
+
+          <!-- btn-2 -->
+          <button class="header__btn-2">sign in</button>
+        </nav>
+      </header>
+
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__box">
+          <h2 class="hero__title">Unlimited movies, TV shows and more</h2>
+          <p class="hero__content-1">Watch anywhere. Cancel anytime.</p>
+          <p class="hero__content-2">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="hero__input-box section-input">
+            <input
+              type="email"
+              name="email"
+              class="hero__email email"
+              placeholder="Email address"
+              required
+            />
+            <button class="btn hero__btn">
+              get started
+              <span class="hero__btn-icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- border-radius -->
+    <div class="border-box">
+      <div class="border-radius-box"></div>
+    </div>
+
+    <div class="absolute-box">
+      <!-- play -->
+      <section class="play container">
+        <h3 class="play__title title">Play Mobile Games</h3>
+        <div class="play__box">
+          <div class="play__box-item">
+            <h3 class="play__box-title">
+              Mobile games now included in every plan
+            </h3>
+            <p class="play__content section-content">
+              No ads, extra fees, or in-app purchases. Enjoy unlimited access to
+              a growing catalogue of popular and exclusive games.
+            </p>
+          </div>
+          <div class="play__img-box">
+            <img src="./img/Netflix-Games.webp" alt="" class="play__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- articles -->
+      <article class="articles container">
+        <h3 class="articles__title title">More reasons to join</h3>
+
+        <div class="articles__box">
+          <!-- about -->
+          <section class="about section-box">
+            <div>
+              <h3 class="about__title section-title">Enjoy on your TV</h3>
+              <p class="about__content section-content">
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                Blu-ray players and more.
+              </p>
+            </div>
+            <div>
+              <p class="section-icon">
+                <span class="material-symbols-outlined icon">
+                  desktop_windows
+                </span>
+              </p>
+            </div>
+          </section>
+
+          <!-- download -->
+          <section class="download section-box">
+            <div>
+              <h3 class="download__title section-title">
+                Download your shows to watch offline
+              </h3>
+              <p class="download__content section-content">
+                Save your favourites easily and always have something to watch.
+              </p>
+            </div>
+            <div>
+              <p class="section-icon">
+                <span class="material-symbols-outlined icon">
+                  arrow_circle_down
+                </span>
+              </p>
+            </div>
+          </section>
+
+          <!-- watch -->
+          <section class="watch section-box">
+            <div>
+              <h3 class="watch__title section-title">Watch everywhere</h3>
+              <p class="watch__content section-content">
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+            </div>
+            <div>
+              <p class="section-icon">
+                <img src="./img/watch.png" alt="" class="watch__img" />
+              </p>
+            </div>
+          </section>
+
+          <!-- create -->
+          <section class="create section-box">
+            <div>
+              <h3 class="create__title section-title">
+                Create profiles for kids
+              </h3>
+              <p class="create__content section-content">
+                Send children on adventures with their favourite characters in a
+                space made just for them—free with your membership.
+              </p>
+            </div>
+            <div>
+              <p class="section-icon">
+                <span class="material-symbols-outlined icon"
+                  >theater_comedy</span
+                >
+              </p>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- frequent -->
+      <section class="frequent">
+        <h2 class="frequent__title">Frequently Asked Questions</h2>
+        <div class="frequent__box">
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="first"
+                class="frequent__radio"
+              />
+              <label for="first" class="frequent__ques">what is netflix?</label>
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div>
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="second"
+                class="frequent__radio"
+              />
+              <label for="second" class="frequent__ques"
+                >how much does netflix cost?</label
+              >
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div class="frequent__icon-box">
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="third"
+                class="frequent__radio"
+              />
+              <label for="third" class="frequent__ques"
+                >where can i watch?</label
+              >
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div>
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="fourth"
+                class="frequent__radio"
+              />
+              <label for="fourth" class="frequent__ques"
+                >how do i cancel?</label
+              >
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div>
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="fifth"
+                class="frequent__radio"
+              />
+              <label for="fifth" class="frequent__ques"
+                >what can i watch on netflix?</label
+              >
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div>
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+          <div class="frequent__ques-box">
+            <div>
+              <input
+                type="radio"
+                name="selection"
+                id="sixth"
+                class="frequent__radio"
+              />
+              <label for="sixth" class="frequent__ques"
+                >is netflix good for kids?</label
+              >
+              <div class="frequent__answer">
+                <p class="frequent__answer-content">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perspiciatis repellat voluptas dicta nesciunt quas inventore
+                  dolorem accusantium et ad ipsam?
+                </p>
+              </div>
+            </div>
+            <!-- plus icon -->
+            <div>
+              <span class="material-symbols-outlined frequent__icon">add</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="frequent__description section-content">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="frequent__input-box section-input">
+          <input
+            type="email"
+            name="email"
+            class="frequent__email email"
+            placeholder="Email address"
+          />
+          <button class="btn frequent__btn">
+            get started
+            <span class="hero__btn-icon">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact container">
+        <h3 class="contact__title section-title">
+          Questions? Call 000-800-919-1694
+        </h3>
+
+        <!-- ul-1 -->
+        <div class="contact__help-box">
+          <ul class="contact__box-1 contact-section">
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">faq</a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Investor Relations</a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Privacy </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link"> Speed Test </a>
+            </li>
+          </ul>
+
+          <!-- ul-2 -->
+          <ul class="contact__box-2 contact-section">
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Help Centre </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Jobs </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Cookie Preferences </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Legal Notices </a>
+            </li>
+          </ul>
+
+          <!-- ul-3 -->
+          <ul class="contact__box-3 contact-section">
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">account</a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Ways to Watch</a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link"> Corporate Information </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link"> Only on Netflix </a>
+            </li>
+          </ul>
+
+          <!-- ul-4 -->
+          <ul class="contact__box-4 contact-section">
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Media Centre </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Terms of Use </a>
+            </li>
+            <li class="contact__box-list-item">
+              <a href="" class="contact__link">Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer container">
+        <div class="footer__box">
+          <button class="footer__btn lang-btn">
+            <!-- lang icon -->
+            <span
+              class="material-symbols-outlined footer__btn-lang lang-btn-translate"
+            >
+              translate
+            </span>
+            <span class="footer__eng"> english </span>
+            <!-- down arrow icon -->
+            <span class="footer__btn-arrow lang-btn-arrow">
+              <i class="fa-solid fa-caret-down"></i>
+            </span>
+          </button>
+        </div>
+        <p class="footer__content">Netflix India</p>
+      </footer>
+    </div>
+
+    <!--  -->
+  </body>
+</html>

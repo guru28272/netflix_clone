@@ -1,0 +1,142 @@
+/* pre-defined media-queries */
+/* @media (max-width: 1536px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 450px) {
+} */
+
+/* frequent */
+.frequent {
+  /* border: 1px solid yellow; */
+  margin-top: 5rem;
+  max-width: 80vw;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frequent__box {
+  /* border: 1px solid red; */
+  width: 80%;
+}
+
+.frequent__ques-box {
+  /* border: 2px solid blanchedalmond; */
+  background: #2d2c2c;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label + .frequent__answer {
+  display: block;
+}
+
+.frequent__ques {
+  /* border: 1px solid red; */
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.frequent__answer {
+  display: none;
+}
+
+.frequent__answer-content {
+  color: #aca3a3;
+  padding: 1rem 0;
+}
+
+.frequent__icon {
+  /* border: 1px solid red; */
+  font-size: 3rem;
+  font-weight: 300;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.frequent__description {
+  /* border: 2px solid yellow; */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.frequent__email {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #888;
+  font-size: 1.2rem;
+  padding: 0.75em 1em;
+  flex: 1;
+  opacity: 0.7;
+}
+
+@media (max-width: 1536px) {
+  .frequent {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .frequent {
+    /* border: 1px solid wheat; */
+    max-width: 91vw;
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frequent {
+    max-width: 96vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .frequent__title,
+  .frequent__ques {
+    font-size: 1.15rem;
+  }
+
+  .frequent__box {
+    width: 100%;
+  }
+
+  .frequent__ques-box {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .frequent__icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .frequent {
+    padding-inline: 1rem;
+  }
+
+  .frequent__ques {
+    font-size: 0.9rem;
+  }
+
+  .frequent__icon {
+    font-size: 1.5rem;
+  }
+}
